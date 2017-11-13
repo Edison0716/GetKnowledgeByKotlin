@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <!--<item name="android:fontFamily">@font/dedao_hanti_chufont</item>-->
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Activity动画-->
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <!--<style name="customfontstyle" parent="@android:style/TextAppearance.Small">-->
+        <!--<item name="android:fontFamily">@font/dedao_font</item>-->
+    <!--</style>-->
+
+
+    <!--布局专用-->
+    <style name="layoutwh_mm">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="layoutwh_mw">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layoutwh_ww">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layoutwh_wm">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="layoutwh_ww_h" parent="layoutwh_ww">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="layoutwh_ww_v" parent="layoutwh_ww">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="layoutwh_mw_h" parent="layoutwh_mw">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="layoutwh_mw_v" parent="layoutwh_mw">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="layoutwh_mm_v" parent="layoutwh_mm">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="layoutwh_mm_h" parent="layoutwh_mm">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="layoutwh_wm_h" parent="layoutwh_mm">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="layoutwh_wm_v" parent="layoutwh_mm">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="tab_lin" parent="layoutwh_ww">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="tab_iv" parent="layoutwh_ww">
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_height">23dp</item>
+        <item name="android:layout_width">23dp</item>
+    </style>
+
+    <style name="tab_tv" parent="layoutwh_ww">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+</resources>

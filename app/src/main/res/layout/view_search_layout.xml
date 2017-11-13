@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutwh_mm_h"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:id="@+id/ll_search"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_text_bg"
+        android:layout_marginLeft="15dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:background="@drawable/search_bg"
+        android:paddingLeft="10dp">
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@mipmap/search"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            style="@style/layoutwh_ww"
+            android:layout_toRightOf="@id/iv_search"
+            android:layout_centerVertical="true"
+            android:text="特朗普访华特别专题"
+            android:textColor="@color/text_color"
+            android:textSize="14dp"
+            android:layout_marginLeft="8dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+
+        <ImageView
+            android:id="@+id/iv_download"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerInParent="true"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/layoutwh_mm_v"
+    android:background="@color/white">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list"
+            style="@style/layoutwh_mm">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <include layout="@layout/view_search_layout"></include>
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/divider_gray"/>
+
+</RelativeLayout>

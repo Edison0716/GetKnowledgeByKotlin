@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layoutwh_mm"
+    android:background="@color/white"
+    tools:context="com.junlong0716.getknowledgedemo.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        style="@style/layoutwh_mm"
+        android:layout_above="@+id/bottom_bar"
+        ></FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/bottom_bar"
+        android:background="@color/divider_gray"/>
+
+    <include
+        android:id="@+id/bottom_bar"
+        style="@style/layoutwh_mw"
+        layout="@layout/view_bottom_bar"
+        android:layout_alignParentBottom="true"
+        tools:ignore="IncludeLayoutParam"/>
+</RelativeLayout>

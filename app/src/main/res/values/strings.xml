@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">得到</string>
+    <string name="home_find">发现</string>
+    <string name="home_today">今日学习</string>
+    <string name="home_paid">已购</string>
+    <string name="home_mine">我的</string>
+    <string name="find_free_area">免费专区</string>
+    <string name="show_all">查看全部</string>
+</resources>

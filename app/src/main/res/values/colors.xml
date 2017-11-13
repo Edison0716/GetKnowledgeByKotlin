@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F2A94B</color>
+    <color name="colorPrimaryDark">#F2A94B</color>
+    <color name="colorAccent">#F2A94B</color>
+    <color name="text_color">#a3a3a3</color>
+    <color name="divider_gray">#e5e5e5</color>
+    <color name="recyclerview_divider_gray">#f7f7f7</color>
+    <color name="bg_gray">#ededed</color>
+    <color name="white">#ffffff</color>
+    <color name="white_tran">#80ffffff</color>
+    <color name="black">#000000</color>
+    <color name="text_black_color">#333333</color>
+
+</resources>
