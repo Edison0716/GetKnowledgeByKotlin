@@ -35,8 +35,6 @@ import java.util.concurrent.TimeUnit
 import android.support.v7.widget.SimpleItemAnimator
 
 
-
-
 /**
  *@author: 巴黎没有摩天轮Li
  *@description:
@@ -99,12 +97,11 @@ class FindFragment : BaseFragment(), SwipeRefreshLayout.OnRefreshListener, FindA
         llSearch = v.findViewById<View>(R.id.ll_search) as LinearLayout
 
         rv_list.layoutManager = LinearLayoutManager(activity)
-        findAdapter = FindAdapter(layoutTypeList,this)
+        findAdapter = FindAdapter(layoutTypeList, this)
         rv_list.adapter = findAdapter
-        (rv_list.getItemAnimator() as SimpleItemAnimator).supportsChangeAnimations = false
-        //rv_list.addItemDecoration(DividerItemDecoration(activity.applicationContext,DividerItemDecoration.VERTICAL))
+        //局部刷新list 的时候 防止 局部闪烁
+        (rv_list.itemAnimator as SimpleItemAnimator).supportsChangeAnimations = false
         rv_list.addItemDecoration(DividerItemDecoration(activity.applicationContext, LinearLayoutManager.VERTICAL, 30, ContextCompat.getColor(activity, R.color.recyclerview_divider_gray)))
-
         setTitleBarTransparency()
 
         initHeaderView(findAdapter)

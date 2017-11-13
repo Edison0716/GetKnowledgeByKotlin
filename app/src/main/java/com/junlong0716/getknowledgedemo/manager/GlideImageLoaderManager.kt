@@ -7,7 +7,7 @@ import com.youth.banner.loader.ImageLoader
 
 /**
  *@author: 巴黎没有摩天轮Li
- *@description:
+ *@description: banner 图片加载器 管理
  *@date: Created in 下午2:46 2017/11/8
  *@modified by:
  */
