@@ -1,17 +1,14 @@
 package com.junlong0716.getknowledgedemo
 
-import android.graphics.Color
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.content.ContextCompat
-import android.support.v7.widget.RecyclerView
+import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.junlong0716.getknowledgedemo.ui.FindFragment
 import com.junlong0716.getknowledgedemo.ui.MineFragment
 import com.junlong0716.getknowledgedemo.ui.PaidFragment
 import com.junlong0716.getknowledgedemo.ui.TodayFragment
-import kotlinx.android.synthetic.main.fragment_find.*
 import kotlinx.android.synthetic.main.view_bottom_bar.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -21,8 +18,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private var paidFragment: PaidFragment? = null
     private var todayFragment: TodayFragment? = null
     private var currentFragment: String = "find"
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
